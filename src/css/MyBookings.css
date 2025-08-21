@@ -1,0 +1,123 @@
+.my-bookings {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: #f8f8f8;
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  text-align: left;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.hotel-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.hotel-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.hotel-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.hotel-name span {
+  font-size: 14px;
+  color: #666;
+}
+
+.hotel-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.icon-small {
+  width: 16px;
+  height: 16px;
+}
+
+.total-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 10px;
+}
+
+.date-info p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.date-info strong {
+  color: #333;
+}
+
+.payment-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status-dot.paid {
+  background-color: #28a745;
+}
+
+.status-dot.unpaid {
+  background-color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .hotel-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hotel-img {
+    width: 100%;
+    max-width: 200px;
+  }
+}

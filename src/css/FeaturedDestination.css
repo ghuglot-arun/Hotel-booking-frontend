@@ -1,0 +1,37 @@
+/* FeaturedDestination.css */
+
+.featured-destination {
+  padding: 20px;
+  background-color: #f0eeee;
+}
+
+.featured-destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive */
+  gap: 20px;
+}
+
+.featured-destination button {
+  margin: 2rem auto 0;
+  display: block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff; /* You can change this color to match your theme */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.featured-destination button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+@media screen and (min-width: 1024px) {
+  .featured-destination-grid {
+    grid-template-columns: repeat(4, 1.5fr); /* 3 columns on laptop */
+  }
+}
