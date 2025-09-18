@@ -1,0 +1,105 @@
+/* -------- Base Layout -------- */
+.hotel-reg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f8f9fa;
+  padding: 1rem;
+}
+
+.hotel-reg-card {
+  position: relative;
+  background: #fff;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* -------- Header Image -------- */
+.hotel-reg-card img.reg-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Close icon (if you add functionality) */
+.hotel-reg-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+/* -------- Form Body -------- */
+.hotel-reg-body {
+  padding: 1.5rem;
+}
+
+.hotel-reg-body p.title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Labels & Inputs */
+.hotel-reg-body label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+.hotel-reg-body input,
+.hotel-reg-body select {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  transition: border 0.2s;
+  background: #fafafa;
+}
+
+.hotel-reg-body input:focus,
+.hotel-reg-body select:focus {
+  border-color: #007bff;
+  outline: none;
+  background: #fff;
+}
+
+/* Button */
+.hotel-reg-body button {
+  width: 100%;
+  padding: 0.7rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.hotel-reg-body button:hover {
+  background: #0056b3;
+}
+
+/* -------- Responsive Tweaks -------- */
+@media (min-width: 600px) {
+  .hotel-reg-card {
+    max-width: 500px;
+  }
+  .hotel-reg-body p.title {
+    font-size: 1.5rem;
+  }
+}

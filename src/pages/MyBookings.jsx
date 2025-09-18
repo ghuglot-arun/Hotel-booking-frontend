@@ -62,6 +62,11 @@ const MyBookings = () => {
               <span className={`status-dot ${booking.isPaid ? 'paid' : 'unpaid'}`}></span>
 <span>{booking.isPaid ? 'Paid' : 'Unpaid'}</span>
             </div>
+            {!booking.isPaid && (
+              <button>
+                Pay Now
+              </button>
+            )}
           </div>
         ))}
       </div>

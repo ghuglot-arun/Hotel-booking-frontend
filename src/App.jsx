@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import AllRooms from './pages/AllRooms'
 import RoomDetail from './pages/RoomDetail'
 import MyBookings from './pages/MyBookings'
+import HotelReg from './components/HotelReg'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
   return (
     <>
       {!isOwnerPath && <Navbar />}
+      {false && <HotelReg />}
       <div>
         <Routes>
           <Route path='/' element={<Home />}/>
