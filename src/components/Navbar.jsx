@@ -31,7 +31,7 @@ const Navbar = () => {
             <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
             <li><Link to="/rooms" onClick={toggleMenu}>Rooms</Link></li>
             <li><Link to="/facilities" onClick={toggleMenu}>Facilities</Link></li>
-            <li><a href="#newsletter">Contact</a></li>
+            <li><Link to='/contact'onClick={toggleMenu} >Contact</Link></li>
           </ul>
 
           <div className="auth-section">

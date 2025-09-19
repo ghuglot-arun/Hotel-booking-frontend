@@ -7,6 +7,9 @@ import AllRooms from './pages/AllRooms'
 import RoomDetail from './pages/RoomDetail'
 import MyBookings from './pages/MyBookings'
 import HotelReg from './components/HotelReg'
+import Layout from './pages/hotelOwner/Layout'
+import Facilities from './pages/Facilities'
+import Contact from './pages/Contact'
 
 const App = () => {
 
@@ -22,6 +25,9 @@ const App = () => {
           <Route path='/rooms' element={<AllRooms />}/>
           <Route path='/rooms/:id' element={<RoomDetail />} />
           <Route path='/my-booking' element={<MyBookings />} />
+          <Route path='/owner' element={<Layout />} />
+          <Route path='/facilities' element={<Facilities />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
       <Footer />

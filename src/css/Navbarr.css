@@ -1,0 +1,93 @@
+/* ===== Color Palette =====
+   Primary BG: #0f172a  (slate/blue-black)
+   Accent Blue: #3b82f6  (bright blue)
+   Text/Icons: #f1f5f9   (light gray)
+*/
+
+/* ----- Navbar Wrapper ----- */
+.navbar {
+  width: 100%;
+  background-color: #0f172a;      /* dark navy */
+  border-bottom: 1px solid #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #f1f5f9;
+}
+
+/* ----- Inner Layout ----- */
+.navbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ----- Logo ----- */
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);  /* make dark logos light on dark bg */
+}
+
+/* ----- Right Actions (UserButton / SignInButton) ----- */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Clerk SignInButton customization */
+.cl-signInButton {
+  background: #3b82f6;             /* bright accent blue */
+  color: #f1f5f9;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.25s;
+}
+.cl-signInButton:hover {
+  background: #2563eb;             /* darker blue on hover */
+}
+
+/* Optional: tweak the Clerk UserButton popover (light mode inside) */
+.cl-userButtonTrigger {
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+}
+
+/* ----- Responsive Tweaks ----- */
+@media (min-width: 640px) {
+  .navbar-inner {
+    padding: 1rem 2rem;
+  }
+  .logo {
+    height: 48px;
+  }
+}
+/* Your own project CSS */
+  .cl-signInButton {
+  background: #3b82f6;
+  color: #f1f5f9;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.25s;
+}
+.cl-signInButton:hover {
+  background: #2563eb;
+}
